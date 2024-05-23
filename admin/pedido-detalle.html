@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Pedido Detalle | Admin</title>
+</head>
+<body>
+    <nav class="navbar navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">CertusShop</a>
+        <button class="navbar-toggler d-md-none collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="navbarNav" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse border-right">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item text-center">
+                            <img src="https://i.pinimg.com/originals/e7/52/e0/e752e07327f569ff30926e3f7c7d0f82.png" 
+                            width="90px;" height="auto;" class="rounded-circle">
+                            <p>Admin</p>
+                            <a href="index.html"><i class="fa fa-sign-out"></i> Cerrar sesión</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column nav-pills">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-home"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="productos-page.html" class="nav-link ">
+                                <i class="fa fa-shopping-cart"></i>
+                                Productos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pedidos-page.html" class="nav-link active">
+                                <i class="fa fa-truck"></i>
+                                Pedidos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ml-ms-auto col-lg-10 px-md-4">
+                
+               <div class="d-flex justify-content-between flex-wrap flex-md-wrap align-items-center pt-3 pb-2 mb-3">
+                <div class="container-fluid">
+               <div class="row">
+                    <div class="col col-lg-10">
+                       
+                        <h5>Pedido #0001</h5>   
+                    </div>
+                    <div class="col col-lg-2">
+                        <div class="btn-group">
+                            <button type="button" disabled class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Estado
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Entregado</a>
+                              <a class="dropdown-item" href="#">Pendiente</a>
+                              <a class="dropdown-item" href="#">Cancelado</a>
+                              <a class="dropdown-item" href="#">Devuelto</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col col-lg-10"></div>
+                    <div class="col col-lg-2">
+                      <p>ESTADO: <span class="badge badge-success">ENTREGADO</span></p>  
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                   <div class="col-lg-12">
+                       <h2><strong>Datos del cliente:</strong></h2>
+                   </div> 
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                               <div class="row">
+                                  <div class="col col-6 col-sm-6 col-md-6 col-lg-3">
+                                    Cliente:
+                                  </div>
+                                  <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                    Oscar Tejada Ibañez
+                                  </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                  <div class="col col-6 col-sm-6 col-md-6 col-lg-3">
+                                    Celular:
+                                  </div>
+                                  <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                    +51 9999999
+                                  </div>
+                                </div>
+                               <br>
+                               <div class="row">
+                                  <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
+                                    Dirección:
+                                  </div>
+                                  <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                    Direccion #111
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                    </div> 
+                 </div>
+                 <hr>
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <h2><strong>Lista de productos:</strong></h2>
+                    </div> 
+                 </div>
+                 <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                               <div class="row">
+                                  <div class="col col-6 col-sm-6 col-md-6 col-lg-3">
+                                    POLO VERDE CUELLO X3
+                                  </div>
+                                  <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                    150 PEN
+                                  </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                  <div class="col col-6 col-sm-6 col-md-6 col-lg-3">
+                                    POLO ROJO CUELLO LX3
+                                  </div>
+                                  <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                    150 PEN
+                                  </div>
+                                </div>
+                               <br>
+                               <div class="row">
+                                  <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
+                                    POLO NEGRO CUELLO SX1
+                                  </div>
+                                  <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                   50 PEN
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col col-12 col-sm-12 col-md-12 col-lg-3">
+                                      TOTAL
+                                    </div>
+                                    <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                     350 PEN
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                    </div> 
+                 </div>
+                </div>
+                </div>
+                
+            </main>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

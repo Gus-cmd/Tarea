@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Producto | Admin</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">CertusShop</a>
+        <button class="navbar-toggler d-md-none collapsed" 
+            type="button" 
+           data-toggle="collapse" 
+           data-target="#navbarNav" 
+           aria-controls="navbarNav" 
+           aria-expanded="false" 
+           >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    </header>
+    <main class="container-fluid">
+        <div class="row">
+            <aside id="navbarNav" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse border-right">
+                <nav class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item text-center">
+                            <img src="https://i.pinimg.com/originals/e7/52/e0/e752e07327f569ff30926e3f7c7d0f82.png" 
+                            width="90px;" height="auto;" class="rounded-circle">
+                            <p>Admin</p>
+                            <a href="index.html"><i class="fa fa-sign-out"></i> Cerrar sesión</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column nav-pills">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-home"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="productos-page.html" class="nav-link active">
+                                <i class="fa fa-shopping-cart"></i>
+                                Productos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pedidos-page.html" class="nav-link">
+                                <i class="fa fa-truck"></i>
+                                Pedidos
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+            <section class="col-md-9 ml-ms-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-wrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h5>Productos</h5>
+                    <a href="nuevo-producto.html" class="btn btn-primary float-right" ><i class="fa fa-plus"></i> Nuevo Producto</a>
+                </div>
+                <div class="col co-12">
+                    <input class="form-control form-control-dark w-100" type="text" placeholder="Buscar Productos" aria-label="Buscar">
+                </div>
+                <!-- Inicio producto uno -->
+                <div class="media text-muted pt-3">
+                    <img src="https://i.linio.com/p/0711a2f51316e22ea6ae083207f6c8f3-catalog.jpg" width="40px;" height="40px;">
+                    <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <div class="d-flex justify-content-between w-100">
+                            <strong class="text-gray-dark">POLO TIPO CUELLO</strong>
+                            <div class="row">
+                                <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <a href="editar-producto.html" class="float-right text-info"><i class="fa fa-edit"></i></a>
+                                </div>
+                                <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <a href="#" class="float-right text-danger"><i class="fa fa-trash"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-success">Stock: 120</span>
+                    </div>
+                </div>
+                <!-- Fin producto uno -->
+                <!-- Inicio producto dos -->
+                <div class="media text-muted pt-3">
+                    <img src="https://i.linio.com/p/618350e74597e8549a07b9588d977e57-catalog.jpg" width="40px;" height="40px;">
+                    <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <div class="d-flex justify-content-between w-100">
+                            <strong class="text-gray-dark">POLO ESTRUCTURADO</strong>
+                            <div class="row">
+                                <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <a href="#" class="float-right text-info"><i class="fa fa-edit"></i></a>
+                                </div>
+                                <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <a href="#" class="float-right text-danger"><i class="fa fa-trash"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-danger">Stock: 0</span>
+                    </div>
+                </div>
+                <!-- Fin producto dos -->
+                <!-- Inicio producto dos -->
+                <div class="media text-muted pt-3">
+                    <img src="https://i.linio.com/p/e27adb39eed7f4d88b78ba7c89748bfa-catalog.jpg" width="40px;" height="40px;">
+                    <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                        <div class="d-flex justify-content-between w-100">
+                            <strong class="text-gray-dark">POLO CAMISERO</strong>
+                            <div class="row">
+                                <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <a href="#" class="float-right text-info"><i class="fa fa-edit"></i></a>
+                                </div>
+                                <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+                                    <a href="#" class="float-right text-danger"><i class="fa fa-trash"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="text-warning">Stock: 10</span>
+                    </div>
+                </div>
+                <!-- Fin producto dos -->
+            </section>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

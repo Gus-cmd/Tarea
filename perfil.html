@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/bootstrap.min.css" />
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="css/style.css" />
+
+   <title>Fase 1 : tienda virtual</title>
+</head>
+<body>
+     <header class="container-fluid">
+         <div class="row">
+            <div class="col col-lg-12">
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <a class="navbar-brand" href="index.html">CertusShop</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <br>
+                    <ul class="navbar-nav col-lg-10">
+                      <li class="nav-item active  col-lg-12">
+                        <div class="input-group">
+                        <input class="form-control mr-sm-12 col-lg-12" type="search" placeholder="Busca productos" aria-label="Buscar">
+                        <div class="input-group-append">
+                           <span class="input-group-text" id="basic-addon2"><i class="fa fa-search" aria-hidden="true"></i></span>
+                         </div>
+                         </div>
+                      </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-2">
+                     <a class="btn btn-primary-outline mr-sm-2" href="###"> <i class="fa fa-car" aria-hidden="true"></i></a>
+                     <div class="dropdown">
+                     <a class="btn btn-primary-outline mr-sm-2 dropdown-toggle"  href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i></a>
+                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="perfil.html">Mi cuenta</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Mis pedidos</a>
+                      </div>
+                     </div> 
+                     <a class="btn btn-primary-outline mr-sm-2" href="###"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>      
+                   </form>
+                  </div>
+                </nav>
+            </div>
+         </div>
+     </header> 
+     <hr>
+     <div class="container d-md-flex align-items-stretch">
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Mis datos personales</h2>
+       <hr>
+       <form id="formulario-perfil">
+        <div class="row">
+          <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="form-group">
+                  <label for="nombre">Nombres</label>
+                  <input type="text" name="nombre" id="nombre" value="" class="form-control">
+                  <div class="invalid-feedback">
+                    El nombre solo permite letras, espacios y puede llevar tilde como maximo 40 caracteres
+                  </div>
+              </div>
+          </div>
+          <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+              <div class="form-group">
+                <label for="apellido">Apellidos</label>
+                <input type="text" name="apellido" id="apellido" value="" class="form-control">
+                <div class="invalid-feedback">
+                  El apellido solo permite letras, espacios y puede llevar tilde como maximo 40 caracteres
+                </div>
+            </div>
+          </div>
+      </div>
+      <div class="row">
+        <div class="col col-4 col-sm-4 col-md-4 col-lg-6">
+          <label for="fecha">Genero</label>
+          <br>
+          <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioGenero" id="radioFemenino" value="option1">
+              <label class="form-check-label" for="radioFemenino">Femenino</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="radioGenero" id="radioMasculino" value="option2">
+              <label class="form-check-label" for="radioMasculino">Masculino</label>
+            </div>
+            
+        </div>
+        <div class="col col-4 col-sm-4 col-md-4 col-lg-6">
+            <div class="form-group">
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="date" value="1996-11-11" name="fecha" id="fecha" class="form-control"
+                    placeholder="Ingresa fecha de nacimiento">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" id="telefono" value="" class="form-control">
+            <div class="invalid-feedback">
+              El telefono solo permite numeros y como maximo 15
+            </div>
+        </div>
+    </div>
+    <div class="col col-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="form-group">
+            <label for="correo">Email</label>
+            <input type="text" disabled="true" name="correo" id="correo" value="correo@gmail.com" class="form-control">
+            <div class="invalid-feedback">
+              El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.
+          </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col col-lg-12">
+        <button class="btn btn-lg btn-block btn-outline-primary">Guardar cambios</button>
+    </div>
+  </div>
+</form>
+      </div>
+
+      <nav id="sidebar">
+				<div class="p-4 pt-5">
+	        <ul class="list-unstyled components mb-5">
+	          <li>
+	            <a href="perfil.html">Mis datos personales</a>
+             </li>
+             <li>
+	            <a href="perfil2.html">Mis direcciones</a>
+             </li>
+             <li>
+	            <a href="perfil3.html">Mis direcciones de facturación</a>
+	          </li>
+	        </ul>	
+	      </div>
+    	</nav>
+		</div>
+    
+
+
+   <script src="js/formulario-perfil.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</body>
+</html>

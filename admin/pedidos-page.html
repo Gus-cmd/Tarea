@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Main | Admin</title>
+</head>
+<body>
+    <nav class="navbar navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">CertusShop</a>
+        <button class="navbar-toggler d-md-none collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="navbarNav" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse border-right">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item text-center">
+                            <img src="https://i.pinimg.com/originals/e7/52/e0/e752e07327f569ff30926e3f7c7d0f82.png" 
+                            width="90px;" height="auto;" class="rounded-circle">
+                            <p>Admin</p>
+                            <a href="index.html"><i class="fa fa-sign-out"></i> Cerrar sesión</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column nav-pills">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-home"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="productos-page.html" class="nav-link ">
+                                <i class="fa fa-shopping-cart"></i>
+                                Productos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pedidos-page.html" class="nav-link active">
+                                <i class="fa fa-truck"></i>
+                                Pedidos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ml-ms-auto col-lg-10 px-md-4">
+                
+               <div class="d-flex justify-content-between flex-wrap flex-md-wrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h5>Pedidos</h5>   
+                </div>
+                <div class="col co-12 col-lg-12">
+                    <input class="form-control form-control-dark w-100" type="text" placeholder="Buscar Pedidos" aria-label="Buscar">
+                </div>
+                <br>
+                <div class="col co-12 col-lg-12 table-responsive">
+                  <table class="table table-striped table-hover">
+                     <thead>
+                       <tr>
+                         <th scope="col">#</th>
+                         <th scope="col">Cliente</th>
+                         <th scope="col">Total (PEN)</th>
+                         <th scope="col">Estado</th>
+                         <th scope="col">Acción</th>
+                       </tr>
+                     </thead>
+                     <tbody>
+                       <tr>
+                         <th scope="row">0001</th>
+                         <td>Oscar</td>
+                         <td>150.00</td>
+                         <td><span class="badge badge-success">ENTREGADO</span></td>
+                         <td><a href="pedido-detalle.html" class="text-primary text-center"><i class="fa fa-search"></i></a></td>
+                       </tr>
+                       <tr>
+                        <th scope="row">0002</th>
+                        <td>Julio</td>
+                        <td>450.00</td>
+                        <td><span class="badge badge-warning">PENDIENTE</span></td>
+                        <td><a href="#" class="text-primary text-center"><i class="fa fa-search"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">0003</th>
+                        <td>Gerardo</td>
+                        <td>80.00</td>
+                        <td><span class="badge badge-danger">CANCELADO</span></td>
+                        <td><a href="#" class="text-primary text-center"><i class="fa fa-search"></i></a></td>
+                      </tr>
+                      <tr>
+                        <th scope="row">0004</th>
+                        <td>Albert </td>
+                        <td>480.00</td>
+                        <td><span class="badge badge-secondary">DEVUELTO</span></td>
+                        <td><a href="#" class="text-primary text-center"><i class="fa fa-search"></i></a></td>
+                      </tr>
+                     </tbody>
+                   </table>
+                </div>
+
+
+               
+               
+               
+            </main>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

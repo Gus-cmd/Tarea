@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Editar Producto | Admin</title>
+</head>
+<body>
+    <nav class="navbar navbar navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">CertusShop</a>
+        <button class="navbar-toggler d-md-none collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="navbarNav" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse border-right">
+                <div class="sidebar-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item text-center">
+                            <img src="https://i.pinimg.com/originals/e7/52/e0/e752e07327f569ff30926e3f7c7d0f82.png" 
+                            width="90px;" height="auto;" class="rounded-circle">
+                            <p>Admin</p>
+                            <a href="index.html"><i class="fa fa-sign-out"></i> Cerrar sesión</a>
+                        </li>
+                    </ul>
+                    <ul class="nav flex-column nav-pills">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">
+                                <i class="fa fa-home"></i>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="productos-page.html" class="nav-link active">
+                                <i class="fa fa-shopping-cart"></i>
+                                Productos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="pedidos-page.html" class="nav-link">
+                                <i class="fa fa-truck"></i>
+                                Pedidos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <main class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-wrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h5>Editar Producto</h5>
+                    <a href="productos-page.html" class="btn btn-secondary float-right"><i class="fa fa-caret-left"></i> Retornar</a>
+                </div>
+                <form id="formulario-producto">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCodigo">Código</label>
+                            <input type="text" class="form-control" id="inputCodigo" name="inputCodigo" value="000004" readonly>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputModelo">Modelo</label>
+                            <input type="text" class="form-control" id="inputModelo" name="inputModelo" value="129202" required>
+                            <div class="invalid-feedback">
+                                El modelo solo permite 6 digitos
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputProducto">Nombre Producto</label>
+                        <input type="text" class="form-control" id="inputProducto" name="inputProducto" value="POLO TIPO CUELLO" required>
+                        <div class="invalid-feedback">
+                            El nombre producto tiene que ser de 4 a 40 digitos.
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputDetalle">Detalle Producto</label>
+                        <input type="text" class="form-control" id="inputDetalle" name="inputDetalle" value="Polo confeccionado en tejido de algodón con estructura piqué. Cuello mao 
+                        y manga corta acabada en rib. Bajo con aberturas laterales. Cierre frontal con botones." required>
+                        <div class="invalid-feedback">
+                            El detalle producto tiene que ser de 10 a 100 digitos.
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-2">
+                            <label for="inputPeso">Peso</label>
+                            <input type="number" class="form-control" id="inputPeso" name="inputPeso" value="3" required>
+                            <div class="invalid-feedback">
+                                El peso solo permite números
+                            </div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputMaterial">Material</label>
+                            <input type="text" class="form-control" id="inputMaterial" name="inputMaterial" value="40% poliéster" required>
+                            <div class="invalid-feedback">
+                                El material solo permite 15 digitos
+                            </div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputTalla">Talla</label>
+                            <select id="inputTalla" name="inputTalla" class="form-control">
+                                <option  value="" selected>Seleccione la talla</option>
+                                <option  value="S">S</option>
+                                <option  value="M">M</option>
+                                <option  value="L">L</option>
+                                <option  value="XL">XL</option>
+                            </select>
+                            <div class="invalid-feedback">Debe elegir una talla</div>
+                        </div>
+                        <div class="form-group col-md-2">
+                            <label for="inputStock">Stock</label>
+                            <input type="number" class="form-control" id="inputStock" name="inputStock" value="120" required>
+                            <div class="invalid-feedback">
+                                El stock solo permite números
+                            </div>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputImagen">Imagen</label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputImagen" name="inputImagen" value="" lang="es">
+                                <label class="custom-file-label" for="inputImagen">Seleccionar Archivo</label>
+                            </div>
+                            <div class="invalid-feedback">Debe elegir una imagen</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary float-right"><i class="fa fa-save"></i> Grabar</button>
+                </form>
+            </main>
+        </div>
+    </div>
+
+ 
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" ></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/formulario-producto.js"></script>
+</body>
+</html>
